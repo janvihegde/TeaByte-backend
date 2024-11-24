@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">HireCircuit</div>
+    <nav>
+      <li class="submenu">
+        <a href="">Features</a>
+        <ul class="submenu-content">
+            <li><a href="codingTest.html">Coding Test</a></li>
+            <li><a href="Job.html">Job Portal</a></li>
+            <li><a href="intern.html">Internship Portal</a></li>
+            <li><a href="chatbot.html">HireReady</a></li>
+            <li><a href="skilldevelopment.html">SKill Development</a></li>
+        </ul>
+    </li>
+
+
+      <a href="admin.html">Home</a>
+          <a href="admin.html">About</a>
+          <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to HireCircuit</h1>
+    <p>Welcome, Admin!</p>
+    <button onclick="scrollToSection('features')">Explore Features</button>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Our Features</h2>
+    <div class="feature">
+      <h3>coding tests</h3>
+      <button id="codingTest">Lets go!!</button>
+      <p>Access a variety of coding tests to strengthen your skills and become fully prepared for placements!</p>    </div>
+    <div class="feature">
+      <h3>Job Portal</h3>
+      <button id="Job">Lets go!!</button>
+      <p>Easily learn about the companies coming to your college and prepare.</p>
+    </div>
+    <div class="feature">
+      <h3>Internship Portal</h3>
+      <button id="intern">Lets go!!</button>
+      <p>Learn about upcoming internships.</p>
+      <h3>HireReady</h3>
+      <button id="chatbot">Lets go!!</button>
+      <p>An AI chatbot to help ace your interview.</p>
+      <h3>Skill Development</h3>
+      <button id="skill">Lets go!!</button>
+      <p>Tools to encourage skill development.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Abhudhaya at NMAMIT actively supports students in securing internships and job placements with top companies. They provide career guidance, organize workshops, and conduct training sessions to enhance students' skills and employability. The department works closely with industry leaders to offer students numerous opportunities for professional growth and success.</p>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 HireCircuit. All rights reserved.</p>
+  </footer>
+
+  <script>
+     document.getElementById("codingTest").onclick = function(){
+    window.location.href = "codingTest.html";
+        };
+        document.getElementById("Job").onclick = function(){
+    window.location.href = "Job.html";
+        };
+        document.getElementById("intern").onclick = function(){
+    window.location.href = "intern.html";
+        };
+        document.getElementById("chatbot").onclick = function(){
+    window.location.href = "chatbot.html";
+        };
+        document.getElementById("skill").onclick = function(){
+    window.location.href = "skilldevelopment.html";
+        };
+        function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+  </script>
+</body>
+</html>

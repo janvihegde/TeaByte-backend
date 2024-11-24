@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../teabyte"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "teabyte"
+	}
+}

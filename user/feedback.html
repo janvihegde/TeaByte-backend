@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Feedback Page</title>
+</head>
+<body>
+    
+        <header>
+        <nav>
+            <li class="submenu">
+                <a href="">Features</a>
+                <ul class="submenu-content">
+                    <li><a href="codingTest.html">Coding Test</a></li>
+                    <li><a href="Job.html">Job Portal</a></li>
+                    <li><a href="intern.html">Internship Portal</a></li>
+                    <li><a href="chatbot.html">HireReady</a></li>
+                    <li><a href="skilldevelopment.html">SKill Development</a></li>
+                </ul>
+            </li>
+        
+        
+              <a href="user.html">Home</a>
+                  <a href="user.html">About</a>
+                  <a href="profile.html">Profile</a>
+          </nav>
+        </header>
+        
+        <div class="container">
+        <h1>Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmationMessage" class="hidden"></div>
+    </div>
+
+    <script src="j.js"></script>
+</body>
+</html>
